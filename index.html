@@ -27,7 +27,15 @@
 
 <body>
 
-
+<script type="text/javascript">
+        var Path = window.location.href;
+		
+		
+		var pathRegex = /privacy-icons.info\?success\=ok#;
+			if (pathRegex.test(window.location.href)) {
+				alert("Your Form Has Been Submitted.")
+			}
+    </script>
 
   <!-- Navigation -->
   <nav class="navbar navbar-light bg-light static-top navbar-inverse">
