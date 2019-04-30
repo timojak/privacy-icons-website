@@ -30,13 +30,14 @@
 
 <script type="text/javascript">
 
-$(document).ready(function () {
-    if(window.location.href.indexOf("success=ok") > -1) {
-		alert("your url contains the name franky");
-		var div = document.createElement('div');
+var div = document.createElement('div');
 		div.className = 'row';
 		div.innerHTML ='<div class="alert alert-success"><strong>Success!</strong> Indicates a successful or positive action.</div>';
 		document.getElementById('body').appendChild(div);
+		
+    if(window.location.href.indexOf("success") > -1) {
+		alert("your url contains the name franky");
+		
 	}
 });
 </script>
@@ -62,8 +63,8 @@ $(document).ready(function () {
           <h1 class="mb-5">Privacy Icons Workshops</h1>
 			<h2 >Wir wollen mit Ihnen funktionierenden Datenschutz gestalten</h2>
 			<h4>13. Mai und 15. Mai</h4>
-			<h4 class="mb-5">Berlin Open Lab, Berlin Zentrum</a></h4>
-			<a class="btn btn-primary btn-lg" href="#mitmachen">Jetzt Mitmachen!</a>
+			<h4 class="mb-5">Berlin Open Lab, Berlin Einsteinufer 43</a></h4>
+			<a class="btn btn-primary btn-lg" href="#mitmachen">Jetzt mitmachen!</a>
         </div>
       </div>
     </div>
@@ -116,7 +117,7 @@ $(document).ready(function () {
 
          <div class="col-lg-12 order-lg-1 my-auto showcase-text">
 		  <h2 style="text-align:center"><a name="projekt">Unser Ansatz: Gestalten MIT den Menschen</a></h2>
-		<p class="lead mb-0" style="text-align:center">Wir wollen Datenschutz <s>wieder</s> verständlich machen. </br>
+		<p class="lead mb-0" style="text-align:center">Wir wollen Datenschutz verständlich machen. </br>
 		  Dafür wollen wir Icons gestalten, die auch die Bedürfnisse der Nutzer widerspiegeln und dadurch Rechtssicherheit vermitteln! 
 		  </br>Diese Bedürfnisse wollen wir verstehen.
 		  </p>
@@ -128,7 +129,7 @@ $(document).ready(function () {
           <h2 class="m-5">Schritt 1: Bedürfnisse aus Nutzersicht verstehen.</h2>
           <p class="lead mb-0 m-5"> In einem ersten Schritt laden wir dafür BürgerInnen ein, um mit uns in einer Reihe von Workshops über Sprachassistenten, Smartphones, intelligente Autos und Co zu sprechen: 
 		  </br>Was darf mit Ihren Daten gemacht werden? Was darf nicht passieren? Was befürchten oder erhoffen Sie? 
-		  </br></br>Antworten auf diese Fragen sind helfen uns, die Informationspflichten der DS-GVO über Bildsymbole darzustellen. Dabei entscheiden Sie mit was wichtig ist und was nicht.
+		  </br></br>Antworten auf diese Fragen helfen uns, die Informationspflichten der DS-GVO über Bildsymbole darzustellen. Dabei entscheiden <i>Sie</i> mit, was wichtig ist und was nicht.
 		  </p>
         </div>
       </div>
@@ -175,7 +176,7 @@ $(document).ready(function () {
 					<input type="submit" value="Senden"  class="btn btn-block btn-lg btn-primary">
               </div>
             </div>
-					<script  type="text/javascript">window.onload = function() { var N=navigator.appName, ua=navigator.userAgent, tem;var M=ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);if(M && (tem= ua.match(/version\/([\.\d]+)/i))!= null) M[2]= tem[1];M=M? [M[1], M[2]]: [N, navigator.appVersion, "-?"];var browserName = M[0];var form = document.forms[0], inputs = form.elements; form.onsubmit = function() { var required = [], att, val; for (var i = 0; i < inputs.length; i++) { att = inputs[i].getAttribute("required"); val = inputs[i].value; type = inputs[i].type; if(type == "email") {if(val != "") {var elemLabel = inputs[i].getAttribute("label");var emailFilter = /^[_/a-zA-Z0-9]+([!"#$%&()*+,./:;<=>?\^_`{|}~-]?[a-zA-Z0-9/_/-])*@[a-zA-Z0-9]+([\_\-\.]?[a-zA-Z0-9]+)*\.([\-\_]?[a-zA-Z0-9])+(\.?[a-zA-Z0-9]+)?$/;var illegalChars= /[\(\)\<\>\,\;\:\"\[\]]/ ;if (!emailFilter.test(val)) {alert("For "+ elemLabel +" field please enter valid email address"); return false;} else if (val.match(illegalChars)) {alert(elemLabel +" field contains illegal characters");return false;}}}if (att != null) { if (val.replace(/^\s+|\s+$/g, "") == "") { required.push(inputs[i].getAttribute("label")); } } } if (required.length > 0) { alert("The following fields are required: " + required.join()); return false; } var numberTypeInputs = document.querySelectorAll("input[type=number]");for (var i = 0; i < numberTypeInputs.length; i++) { val = numberTypeInputs[i].value;var elemLabel = numberTypeInputs[i].getAttribute("label");if(val != "") {var intRegex = /^[+-]?\d+$/;if (!intRegex.test(val)) {alert("For "+ elemLabel +" field please enter valid number"); return false;}}}}; }</script>
+					<script  type="text/javascript">window.onload = function() { var N=navigator.appName, ua=navigator.userAgent, tem;var M=ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);if(M && (tem= ua.match(/version\/([\.\d]+)/i))!= null) M[2]= tem[1];M=M? [M[1], M[2]]: [N, navigator.appVersion, "-?"];var browserName = M[0];var form = document.forms[0], inputs = form.elements; form.onsubmit = function() { var required = [], att, val; for (var i = 0; i < inputs.length; i++) { att = inputs[i].getAttribute("required"); val = inputs[i].value; type = inputs[i].type; if(type == "email") {if(val != "") {var elemLabel = inputs[i].getAttribute("label");var emailFilter = /^[_/a-zA-Z0-9]+([!"#$%&()*+,./:;<=>?\^_`{|}~-]?[a-zA-Z0-9/_/-])*@[a-zA-Z0-9]+([\_\-\.]?[a-zA-Z0-9]+)*\.([\-\_]?[a-zA-Z0-9])+(\.?[a-zA-Z0-9]+)?$/;var illegalChars= /[\(\)\<\>\,\;\:\"\[\]]/ ;if (!emailFilter.test(val)) {alert("Für "+ elemLabel +" bitte valide Mail-Adresse eingeben"); return false;} else if (val.match(illegalChars)) {alert(elemLabel +" Feld hat unzulässige Zeichen");return false;}}}if (att != null) { if (val.replace(/^\s+|\s+$/g, "") == "") { required.push(inputs[i].getAttribute("label")); } } } if (required.length > 0) { alert("Notwendiges Feld bitte ausfüllen " + required.join()); return false; } var numberTypeInputs = document.querySelectorAll("input[type=number]");for (var i = 0; i < numberTypeInputs.length; i++) { val = numberTypeInputs[i].value;var elemLabel = numberTypeInputs[i].getAttribute("label");if(val != "") {var intRegex = /^[+-]?\d+$/;if (!intRegex.test(val)) {alert("For "+ elemLabel +" field please enter valid number"); return false;}}}}; }</script>
 
           </form>
         </div>
