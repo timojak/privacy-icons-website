@@ -17,28 +17,21 @@
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  
   <!-- Custom styles for this template -->
  <link href="css/landing-page.min.css" rel="stylesheet">
  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/simplex/bootstrap.min.css" rel="stylesheet" integrity="sha384-1OYccka9EByiS23wvPFiYHBPRAgU91xYVFb8g8sen6vRiBI5Uko6+B87q8zPGUnA" crossorigin="anonymous">
-
+<script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript'></script>
 
 </head>
 
 <body>
 
-
 <script type="text/javascript">
-
-var div = document.createElement('div');
-		div.className = 'row';
-		div.innerHTML ='<div class="alert alert-success"><strong>Success!</strong> Indicates a successful or positive action.</div>';
-		document.getElementById('body').appendChild(div);
-		
-    if(window.location.href.indexOf("success") > -1) {
-		alert("your url contains the name franky");
-		
-	}
+jQuery( document ).ready(function() {
+    if (window.location.href.indexOf('?success=ok') > 0) {
+        jQuery("#mailAlert").alert().removeClass('collapse')
+    }
 });
 </script>
 
@@ -54,6 +47,15 @@ var div = document.createElement('div');
     </div>
   </nav>
   
+  <!--Mail Modal-->
+  <div class="alert alert-success alert-dismissible collapse" id="mailAlert">
+<strong>Danke für Ihr Interesse!</strong> Sie erhalten in Kürze eine E-Mail von uns!
+<button type="button" class="close" data-dismiss="alert">&times;</button>
+    
+</div>
+  <!--Mail Modal-->
+
+
     <!-- Masthead -->
   <header class="masthead text-white text-center">
     <div class="overlay"></div>
